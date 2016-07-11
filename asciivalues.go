@@ -48,7 +48,7 @@ func BuildCharacterTable(maxRune int32) [][]rune {
 		return [][]rune{}
 	}
 
-	size := 1 + maxRune - startRune // Rune starts from 20 (space)
+	size := 1 + maxRune - startRune // Rune starts from 32 (space)
 	square := int(math.Ceil(math.Sqrt(float64(size))))
 
 	charTable := make([][]rune, square)

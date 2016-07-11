@@ -15,8 +15,8 @@ func TestBuildCharacterTable(t *testing.T) {
 	}{
 		{
 			max: 19,
-			// The first real character in the utf-8 table is 20, which
-			// is a space. If the max is lower than 20, we should
+			// The first real character in the utf-8 table is 32, which
+			// is a space. If the max is lower than 32, we should
 			// receive an empty table
 			expectedTable: [][]rune{},
 		},
